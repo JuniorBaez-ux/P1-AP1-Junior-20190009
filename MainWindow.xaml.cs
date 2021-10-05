@@ -31,5 +31,11 @@ namespace P1_AP1_Junior_20190009
             rAportes aportes = new rAportes();
             aportes.Show();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            cAportes consulaportes = new cAportes();
+            consulaportes.Show();
+        }
     }
 }

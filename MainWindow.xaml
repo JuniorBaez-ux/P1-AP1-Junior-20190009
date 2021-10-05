@@ -12,7 +12,7 @@
                 <MenuItem Header="Registro de Aportes" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Consultas">
-                
+                <MenuItem Header="Consulta de Aportes" Click="MenuItem_Click_1"/>
             </MenuItem>
         </Menu>
     </Grid>
