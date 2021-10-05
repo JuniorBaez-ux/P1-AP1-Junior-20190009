@@ -9,7 +9,7 @@
     <Grid>
         <Menu>
             <MenuItem Header="Registros">
-                
+                <MenuItem Header="Registro de Aportes" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Consultas">
                 

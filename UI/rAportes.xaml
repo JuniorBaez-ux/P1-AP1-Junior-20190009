@@ -1,0 +1,68 @@
+﻿<Window x:Class="P1_AP1_Junior_20190009.UI.rAportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P1_AP1_Junior_20190009.UI"
+        mc:Ignorable="d"
+        Title="Aportes" Height="450" Width="800">
+    <Grid>
+         <StackPanel Orientation="Vertical">
+            <Label x:Name="AportesIDLabel" Content=" Aportes ID" />
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="AportesIDTextBox" Text="{Binding aporteID}" Height="30" Width="70" Margin="10,0,0,0"/>
+                <Button x:Name="BuscarIDButton" Click="Buscarbutton_Click" Height="20" Width="40" Margin="20,0">
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/UI/simbolo-de-interfaz-de-lupa-de-busqueda.png" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+            <Label x:Name="FechaLabel" Content="Fecha" />
+            <StackPanel Orientation="Horizontal" >
+                <DatePicker x:Name="FechaTextBox" Text="{Binding fecha}" Height="30" Width="150" Margin="10,0,0,0" />
+            </StackPanel>
+
+            <Label x:Name="Personalabel" Content="Persona" />
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="PersonaTextBox" Text="{Binding persona}" Height="30" Width="150" Margin="10,0,0,0"/>
+            </StackPanel>
+
+            <Label x:Name="Conceptolabel" Content="Concepto" />
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="ConceptoTextBox" Text="{Binding concepto}" Height="30" Width="150" Margin="10,0,0,0"/>
+            </StackPanel>
+
+            <Label x:Name="Montolabel" Content="Monto" />
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="MontoTextBox" Text="{Binding monto}" Height="30" Width="150" Margin="10,0,0,0"/>
+            </StackPanel>
+
+             
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <Button x:Name="NuevoButton" Height="70" Width="70" Margin="15,0" Click="Nuevobutton_Click" VerticalContentAlignment="Bottom" VerticalAlignment="Top">
+                    <StackPanel Orientation="Vertical">
+                        <Image Stretch="None" Source="/UI/WhatsApp Image 2021-09-10 at 12.57.08 PM (1).jpeg"/>
+                        <Label Content="Nuevo"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="GuardarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Guardarbutton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/UI/WhatsApp Image 2021-09-10 at 12.57.09 PM (1).jpeg" Stretch="None"/>
+                        <Label Content="Guardar"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="EliminarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Eliminarbutton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/UI/WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" Stretch="None"/>
+                        <Label Content="Eliminar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
