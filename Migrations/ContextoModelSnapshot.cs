@@ -18,23 +18,23 @@ namespace P1_AP1_Junior_20190009.Migrations
 
             modelBuilder.Entity("P1_AP1_Junior_20190009.Entidades.Aportes", b =>
                 {
-                    b.Property<int>("aporteID")
+                    b.Property<int>("AporteID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("concepto")
+                    b.Property<string>("Concepto")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("fecha")
+                    b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
-                    b.Property<float>("monto")
+                    b.Property<float>("Monto")
                         .HasColumnType("REAL");
 
-                    b.Property<string>("persona")
+                    b.Property<string>("Persona")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("aporteID");
+                    b.HasKey("AporteID");
 
                     b.ToTable("Aportes");
                 });

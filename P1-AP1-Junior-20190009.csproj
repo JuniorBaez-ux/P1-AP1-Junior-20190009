@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UI\Registros\simbolo-de-interfaz-de-lupa-de-busqueda.png" />
+    <None Remove="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.08 PM %281%29.jpeg" />
+    <None Remove="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.09 PM %281%29.jpeg" />
+    <None Remove="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" />
     <None Remove="UI\simbolo-de-interfaz-de-lupa-de-busqueda.png" />
     <None Remove="UI\WhatsApp Image 2021-09-10 at 12.57.08 PM %281%29.jpeg" />
     <None Remove="UI\WhatsApp Image 2021-09-10 at 12.57.09 PM %281%29.jpeg" />
@@ -27,10 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="UI\simbolo-de-interfaz-de-lupa-de-busqueda.png" />
-    <Resource Include="UI\WhatsApp Image 2021-09-10 at 12.57.08 PM (1).jpeg" />
-    <Resource Include="UI\WhatsApp Image 2021-09-10 at 12.57.09 PM (1).jpeg" />
-    <Resource Include="UI\WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" />
+    <Resource Include="UI\Registros\simbolo-de-interfaz-de-lupa-de-busqueda.png" />
+    <Resource Include="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.08 PM %281%29.jpeg" />
+    <Resource Include="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.09 PM %281%29.jpeg" />
+    <Resource Include="UI\Registros\WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" />
   </ItemGroup>
 
   <ItemGroup>

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace P1_AP1_Junior_20190009.BLL
 {
-    public class AportesBLL
+    public class AporteBLL
     {
 
         private static bool Insertar(Aportes Aportes)
@@ -116,7 +116,7 @@ namespace P1_AP1_Junior_20190009.BLL
             Contexto db = new Contexto();
             try
             {
-                encontrado = db.Aportes.Any(x => x.aporteID == id);
+                encontrado = db.Aportes.Any(x => x.AporteID == id);
             }
             catch (Exception)
             {
@@ -131,7 +131,7 @@ namespace P1_AP1_Junior_20190009.BLL
 
         public static bool Guardar(Aportes Aportes)
         {
-            if (!Existe(Aportes.aporteID))
+            if (!Existe(Aportes.AporteID))
                 return Insertar(Aportes);
             else
                 return Modificar(Aportes);

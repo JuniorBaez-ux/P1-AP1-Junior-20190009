@@ -35,7 +35,7 @@ namespace P1_AP1_Junior_20190009.UI
 
             Limpiar();
 
-            aportes = AportesBLL.Buscar(id);
+            aportes = AporteBLL.Buscar(id);
 
             if (aportes != null)
             {
@@ -63,7 +63,7 @@ namespace P1_AP1_Junior_20190009.UI
             }
 
             aportes = LlenarClase();
-            paso = AportesBLL.Guardar(aportes);
+            paso = AporteBLL.Guardar(aportes);
 
             if (!ExisteEnLaBaseDeDatos())
             {
@@ -82,7 +82,7 @@ namespace P1_AP1_Junior_20190009.UI
             int id;
             int.TryParse(AportesIDTextBox.Text, out id);
             Limpiar();
-            if (AportesBLL.Eliminar(id))
+            if (AporteBLL.Eliminar(id))
             {
                 MessageBox.Show("Aporte eliminado correctamente", "Proceso exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
             }
@@ -94,28 +94,28 @@ namespace P1_AP1_Junior_20190009.UI
 
         private void LlenarCampos(Aportes aportes)
         {
-            AportesIDTextBox.Text = aportes.aporteID.ToString();
-            FechaTextBox.SelectedDate = aportes.fecha;
-            PersonaTextBox.Text = aportes.persona;
-            ConceptoTextBox.Text = aportes.concepto;
-            MontoTextBox.Text = aportes.monto.ToString();
+            AportesIDTextBox.Text = aportes.AporteID.ToString();
+            FechaTextBox.SelectedDate = aportes.Fecha;
+            PersonaTextBox.Text = aportes.Persona;
+            ConceptoTextBox.Text = aportes.Concepto;
+            MontoTextBox.Text = aportes.Monto.ToString();
         }
 
         private Aportes LlenarClase()
         {
             Aportes aportes = new Aportes();
-            aportes.aporteID = Utilidades.ToInt(AportesIDTextBox.Text);
-            aportes.fecha = (DateTime)FechaTextBox.SelectedDate;
-            aportes.persona = PersonaTextBox.Text;
-            aportes.concepto = ConceptoTextBox.Text;
-            aportes.monto = Utilidades.ToInt(MontoTextBox.Text);
+            aportes.AporteID = Utilidad.ToInt(AportesIDTextBox.Text);
+            aportes.Fecha = (DateTime)FechaTextBox.SelectedDate;
+            aportes.Persona = PersonaTextBox.Text;
+            aportes.Concepto = ConceptoTextBox.Text;
+            aportes.Monto = Utilidad.ToInt(MontoTextBox.Text);
 
             return aportes;
         }
 
         private bool ExisteEnLaBaseDeDatos()
         {
-            Aportes aportes = AportesBLL.Buscar(Utilidades.ToInt(AportesIDTextBox.Text));
+            Aportes aportes = AporteBLL.Buscar(Utilidad.ToInt(AportesIDTextBox.Text));
 
             return (aportes!= null);
         }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1_AP1_Junior_20190009.UI"
         mc:Ignorable="d"
-        Title="Aportes" Height="450" Width="800">
+        Title="Aportes" Height="450" Width="572">
     <Grid>
          <StackPanel Orientation="Vertical">
             <Label x:Name="AportesIDLabel" Content=" Aportes ID" />
@@ -14,7 +14,7 @@
                 <Button x:Name="BuscarIDButton" Click="Buscarbutton_Click" Height="20" Width="40" Margin="20,0">
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/UI/simbolo-de-interfaz-de-lupa-de-busqueda.png" />
+                        <Image Source="/UI/Registros/simbolo-de-interfaz-de-lupa-de-busqueda.png" />
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -43,21 +43,21 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
                 <Button x:Name="NuevoButton" Height="70" Width="70" Margin="15,0" Click="Nuevobutton_Click" VerticalContentAlignment="Bottom" VerticalAlignment="Top">
                     <StackPanel Orientation="Vertical">
-                        <Image Stretch="None" Source="/UI/WhatsApp Image 2021-09-10 at 12.57.08 PM (1).jpeg"/>
+                        <Image Stretch="None"  Source="/UI/Registros/WhatsApp Image 2021-09-10 at 12.57.08 PM (1).jpeg"/>
                         <Label Content="Nuevo"/>
                     </StackPanel>
                 </Button>
 
                 <Button x:Name="GuardarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Guardarbutton_Click">
                     <StackPanel Orientation="Vertical">
-                        <Image Source="/UI/WhatsApp Image 2021-09-10 at 12.57.09 PM (1).jpeg" Stretch="None"/>
+                        <Image Source="/UI/Registros/WhatsApp Image 2021-09-10 at 12.57.09 PM (1).jpeg" Stretch="None"/>
                         <Label Content="Guardar"/>
                     </StackPanel>
                 </Button>
 
                 <Button x:Name="EliminarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Eliminarbutton_Click">
                     <StackPanel Orientation="Vertical">
-                        <Image Source="/UI/WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" Stretch="None"/>
+                        <Image Source="/UI/Registros/WhatsApp Image 2021-09-10 at 12.57.09 PM.jpeg" Stretch="None"/>
                         <Label Content="Eliminar"/>
                     </StackPanel>
                 </Button>

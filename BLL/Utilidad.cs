@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P1_AP1_Junior_20190009.BLL
 {
-    public class Utilidades
+    public class Utilidad
     {
         public static int ToInt(string valor)
         {
